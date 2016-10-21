@@ -231,7 +231,7 @@ class News extends \yii\db\ActiveRecord
             }
             $item=['items'=>$items];
 
-            \Yii::$app->cache->set( 'datamenuitem1'.Yii::$app->controller->action->id, $item );
+            \Yii::$app->cache->set( 'datamenuitem1'.$action, $item );
         }
 
         return $item;
